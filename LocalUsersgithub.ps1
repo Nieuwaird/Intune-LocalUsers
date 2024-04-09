@@ -23,8 +23,8 @@ File : AdminManagementLog.txt
 ########################################################################################################
 # User Principal Names (UPNs) of AzureAD users to be added to the local administrators group
 $userUPNs = @(
-    'WhoTookMyName6@contoso.com',
-    'funny.guy@contoso.be',
+    'testuser@contoso.com',
+    'someotheradmin@contoso.be',
     'admin@contoso.be'
 )
 
@@ -32,7 +32,7 @@ $userUPNs = @(
 $newGroup = 'gebruikers'
 
 # Specify the accounts to exclude from removal
-$excludedAccounts = @("WhoTookMyName6", "funny.guy", "admin", "Administrator")
+$excludedAccounts = @("testuser", "someotheradmin", "admin", "Administrator")
 
 # Define the directory and file path for logging  
 $directoryPath = "C:\tempIntune"
